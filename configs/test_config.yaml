@@ -1,0 +1,28 @@
+# ------------------
+# General Settings
+# ------------------
+experiment_name: config_test_run
+seed: 42
+device: "cuda" # або "cpu"
+
+# ------------------
+# Model Parameters
+# ------------------
+output_dim: 64
+dropout: 0.9
+activation: "gelu"
+
+# ------------------
+# Training Parameters
+# ------------------
+kfolds: 3
+epochs: 5
+batch_size: 16
+lr: 1.2e-4
+weight_decay: 0.01
+
+# ------------------
+# Loss & KD
+# ------------------
+loss_type: "hybrid_kd"
+alpha_kd: 0.7
